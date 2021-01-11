@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-size: 1.5rem;
+        font-family: "Roboto", sans-serif;
+        color: #222222;
+        background: url('./bg.jpg') center center no-repeat;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 10px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, .7);
+      }
+
+      label {
+        margin: 10px;
+      }
+
+      input[type="text"] {
+        border: 1px solid #555151;
+        border-radius: 3px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <label for="">X: <input type="text" id="center-x" placeholder="0 by default"/></label>
+      <label for="">Y: <input type="text" id="center-y" placeholder="0 by default"/></label>
+      <label for="">R: <input type="text" id="radius" placeholder="1 by default"/></label>
+      <label for="">Step: <input type="text" id="step" placeholder="90 by default"/></label>
+      <button id="find">Find</button>
+    </div>
+    <div id="output"></div>
+    <script src="code.js"></script>
+  </body>
+</html>
